@@ -12,13 +12,13 @@ pipeline{
 
 						stage('test') {
 								steps {
-									echo ' this is the test stage and its been run success'
+									echo 'mvn clean test'
 										}
 								}
 
 						stage('build') {
 								steps {
-									sh 'mvn clean install'
+									sh 'mvn install'
 										}
 								}
 
